@@ -33,3 +33,5 @@ public class Aula03Calculadora {
 
   }
 }
+
+// importante eu lembrar que quando eu tenho somente uma linha na condição eu não preciso abrir chaves de bloco, assim podendo economizar mais linhas no meu código.
