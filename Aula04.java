@@ -43,7 +43,7 @@ public class Aula04{
 				 * tipo String não será permitido usar ==, deveremos utilizar o metodo equals()
 				 * 
 				 * */
-				/*
+				
 				if (operacao.equals("SOMAR") || operacao.equals("+"))
 					resultado = valor1 + valor2;
 				 else if (operacao.equals("SUBTRAIR") || operacao.equals("-"))
@@ -57,7 +57,7 @@ public class Aula04{
 					System.out.println("Favor digitar uma operação válida");
 					erro = true;
 				}
-				*/
+				
 				
 				// switch (operacao) {
 				// case "SOMAR", "+":
