@@ -16,8 +16,8 @@ public class Exercicio_fecaf {
 		String aluno_aprovado = null;
 		boolean aprovado = false;
 		float nota1, nota2, nota3, nota4, nota_exame = 0;
-		double media = 0;
-		double media_exame = 0;
+		double media;
+		double media_exame;
 		
 		// instanciando as classes Scanner e DecimalFormat
 		Scanner leitor = new Scanner(System.in);
