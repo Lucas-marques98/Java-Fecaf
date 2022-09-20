@@ -1,3 +1,4 @@
+//tenho que adicionar o valor final que o úsuario digitar
 import java.util.Scanner;
 
 public class exercicioTabFun {
