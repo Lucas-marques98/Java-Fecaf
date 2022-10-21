@@ -12,6 +12,9 @@ public class Produto {
 	
 	//set - significa guardar
 	//get - significa pegar
+
+// 	Como usar o GET E o set?
+// Usamos get para obter informações. Esse tipo de método sempre retorna um valor. Usamos set para definir valores. Esse tipo de método geralmente não retorna valores.
 	
 	//set Nome
 	public void setNome (String nome) {
