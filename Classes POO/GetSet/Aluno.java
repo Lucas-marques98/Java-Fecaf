@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.Calendar;
 
 public class Aluno {
-	//Atributos da classe 
+	//Atributos da classe (Sempre para ser acessado, precisa do this)
 	private int id;
 	private String ra;
 	private String nome;
@@ -12,7 +12,17 @@ public class Aluno {
 	private String descricaoSexo;
 	private String dataNascimento;
 	private int idade;
+	private String tipoCurso;
 	
+	//Construtor
+	public Aluno(String tipoCurso) {
+		if(tipoCurso.toUpperCase().equals("G"))
+			this.tipoCurso = "Graduação";
+			else if(tipoCurso.toUpperCase().equals("C"))
+			this.tipoCurso = "Colégio";
+			else if(tipoCurso.toUpperCase().equals("P"))
+			this.tipoCurso = "Pós-Graduação";
+	}
 	
 	//Getters e Setters
 	
@@ -38,6 +48,7 @@ public class Aluno {
 		
 	//Set nome
 	public void setNome(String nome) {
+		//o atributo nome está recebendo a váriavel nome
 		this.nome = nome;
 	}
 	
@@ -110,8 +121,26 @@ public class Aluno {
 	public int getIdade() {
 		return this.idade;	
 	}
+	//get retorna o do Curso
+	public String getTipoCurso() {
+		return this.tipoCurso;
+	}
 	
+	//set Guarda o tipo do curso
+	//é boa pratica criar os argumentos dos métodos com o mesmo nome dos atributos, mas sempre lembrar que o argumento é local e o atributo é global
+	private void setTipoCurso(String tipoCurso) {
+		this.tipoCurso = tipoCurso;
+	}
 		
 	//Metodos da classe
-	
+	//Retorna o print de todos os dados referente a um aluno
+	public void getDadosAlunos() {
+	System.out.println("############### Relatório de dados do aluno ##############");
+	System.out.println("RA:" + this.getRa());
+	System.out.println("NOME:" + this.getNomeCompleto());
+	System.out.println("SEXO: [" + this.getSexo() + "]-" + this.getDescricaoSexo());
+	System.out.println("DATA DE NASCIMENTO:" + this.getDataNascimento());
+	System.out.println("O aluno(a) " + this.getNome() + " tem " + this.getIdade() + " anos.");
+	System.out.println("Tipo do curso: " + this.getTipoCurso());
+	}
 }
